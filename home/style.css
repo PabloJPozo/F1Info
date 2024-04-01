@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100dvh;
+    background: #ddd;
+    
+    background: -webkit-linear-gradient(to top, #434343, #c5bfbf);
+
+    background: linear-gradient(to top, #434343, #c5bfbf);
+  
+    color: #EFF1F3;
+    font-family: system-ui;
+}
+
+
+
+
+/* Parte de arriba (header)*/
+
+.fixed-header{
+    background-color: #ddd;
+    position: sticky;
+    top: 0;
+    transition: transform 0.3s ease; 
+}
+
+.fixed-header.hide {
+    transform: translateY(-100%); 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+}
+
+.logo{
+    color: black;
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.imgHeader{
+    height: 90px;
+    border-radius: 50px;
+}
+
+.imgHeader:hover{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+
+nav ul{
+    font-weight: 47 0;
+    font-size: 17px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    transition: .3s;
+    color: grey;
+}
+
+.boton{
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: #EFF1F3;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.boton:hover{
+    color:black;
+    background-color:#656669;;
+    transition: .4s;
+    
+}
+
+
+
+
+
+/*Parte de abajo (Footer) */
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem 5%;
+    background-color: #807f7f;
+    display: flex;
+    flex-direction: column;
+    /*position: sticky*/
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-icon{
+    cursor: pointer;
+    height: 32px;
+    margin: 0.8rem 1.7rem;
+    border-radius: 9px;
+}
+
+.social-icon:hover{
+    transition: .4s;
+    opacity: 0.4;
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.menu-item{
+    margin: 1rem 1.2rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;   
+}
