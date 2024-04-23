@@ -99,9 +99,9 @@ nav ul li a:hover{
 :root {
     --background-color: ;
     --text-color: hsl(0, 0%, 100%);
-  }
+}
   
-  .wrapper {
+.wrapper {
     display: grid;
     place-content: center;
     background-color: var(--background-color);
@@ -110,17 +110,17 @@ nav ul li a:hover{
     font-weight: 900;
     text-transform: uppercase;
     color: var(--text-color);
-  }
+}
   
-  .wrapper > div {
+.wrapper > div {
     grid-area: 1/1/-1/-1;
-  }
+}
   
-  .top {
+.top {
     clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
-  }
+}
   
-  .bottom {
+.bottom {
     clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
     color: transparent;
     background: -webkit-linear-gradient(177deg, #434343 53%, var(--text-color) 65%);
@@ -179,16 +179,20 @@ nav ul li a:hover{
     margin: 50px;
 }
 
+.carrera:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 8px 8px 5px grey;
+}
+
+
 .titulo{
     text-align: center;
     padding: 15px;
 }
 
 .titulo img{
-    width: 400px;
+    width: 300px;
     margin-bottom: 30px;
 }
-
-
-
-
